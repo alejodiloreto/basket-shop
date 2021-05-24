@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?4b21ce9d2a65546bb3b77325c7321f32") format("truetype"),
+url("./flaticon.woff?4b21ce9d2a65546bb3b77325c7321f32") format("woff"),
+url("./flaticon.woff2?4b21ce9d2a65546bb3b77325c7321f32") format("woff2"),
+url("./flaticon.eot?4b21ce9d2a65546bb3b77325c7321f32#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4b21ce9d2a65546bb3b77325c7321f32#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-nike:before {
+    content: "\f101";
+}
+.flaticon-enviado:before {
+    content: "\f102";
+}
+.flaticon-instagram:before {
+    content: "\f103";
+}
+.flaticon-facebook:before {
+    content: "\f104";
+}
+.flaticon-youtube:before {
+    content: "\f105";
+}
+.flaticon-promociones:before {
+    content: "\f106";
+}
+.flaticon-pelota-de-baloncesto:before {
+    content: "\f107";
+}
+.flaticon-zapatillas:before {
+    content: "\f108";
+}
+.flaticon-aparcamiento:before {
+    content: "\f109";
+}
+.flaticon-usuario:before {
+    content: "\f10a";
+}
+.flaticon-carrito-de-compras:before {
+    content: "\f10b";
+}
