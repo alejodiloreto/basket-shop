@@ -20,11 +20,12 @@ body {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-color: var(--dark-gray);
+  background-size: contain;
 }
 
 .head-container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 180px;
 }
 
 .nav {
@@ -53,6 +54,10 @@ body {
 
 .list-item:first-child {
   margin-left: 240px;
+}
+
+.list-item:hover {
+  color: var(--orange);
 }
 
 .list-icon {
@@ -92,7 +97,7 @@ body {
 
 .header-section-h1 {
   font-size: 70px;
-  line-height: 0;
+  margin: 0;
 }
 
 .lebron-text {
@@ -106,7 +111,7 @@ body {
 }
 
 .sneaker {
-  max-width: 770px;
+  width: 770px;
   display: flex;
   justify-content: flex-end;
   transform: rotate(-25deg);
@@ -154,7 +159,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   color: var(--white);
-  padding: 200px 0px;
+  padding: 270px 0px 200px;
 }
 
 .section-services-container {
@@ -166,19 +171,17 @@ body {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
   width: 320px;
-  height: 194px;
   background-color: var(--light-gray);
   border: 1px solid var(--orange);
   border-top: none;
-  margin: 30px 26px 30px 0px;
+  margin: 45px 0px 30px 0px;
   display: flex;
-  justify-content: center;
-  padding: 0px 60px 0px 50px;
+  padding: 10px 80px 10px 55px;
   flex-direction: column;
   font-family: "Manrope", sans-serif;
   position: relative;
@@ -207,6 +210,131 @@ body {
   font-size: 80px;
 }
 
+.section-promotion {
+  width: 1440px;
+  margin: 0 auto;
+  color: var(--white);
+  padding-bottom: 200px;
+}
+
+.section-promotion-container {
+  margin-bottom: 80px;
+}
+
+.promotion-cards-container {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promotion-cards-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promotion-card-left {
+  width: 700px;
+  height: 529px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--orange);
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.h4-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 5px 0 5px 60px;
+}
+
+.h4-card h4 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.promotion-card-right {
+  width: 700px;
+  height: 250px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--orange);
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.promotion-card-left img {
+  width: 520px;
+}
+
+.promotion-card-right img {
+  width: 520px;
+}
+
+.promotion-card-right-bottom {
+  width: 700px;
+  height: 250px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--orange);
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.promotion-card-right-bottom img {
+  width: 253px;
+}
+
+.more-about-us {
+  width: 1440px;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 170px;
+}
+
+.text-more-about-us {
+  font-size: 22px;
+  color: white;
+}
+
+.text-more-about-us h2 {
+  margin-bottom: 50px;
+}
+
+.text-more-about-us h3 {
+  font-weight: 400;
+  margin: 5px 0;
+  color: var(--orange);
+}
+
+.text-more-about-us p {
+  font-size: 23px;
+  margin: 18px 0 30px 0;
+}
+
+.map {
+  width: 750px;
+  height: 530px;
+  border: 2px solid var(--orange);
+}
+
 .footer {
   width: 100%;
   height: 15vh;
@@ -215,6 +343,15 @@ body {
   justify-content: space-around;
   align-items: center;
   color: var(--white);
+}
+
+.footer-p a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.footer-p a:hover {
+  color: var(--orange);
 }
 
 .footer-icons {
@@ -229,4 +366,185 @@ body {
 .flaticon-facebook {
   color: var(--orange);
   cursor: pointer;
+}
+
+/*--------------------------mobile portrait-------------------------
+-----------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-size: auto;
+  }
+
+  .head-container {
+    margin: 0 auto;
+  }
+  .nav {
+    margin: 50px 14px 0px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .header-section-h1 {
+    font-size: 37px;
+    margin: 0;
+  }
+
+  .header-section-h1,
+  .header-section-p,
+  .add-to-cart {
+    margin-left: 20px;
+  }
+
+  .header-section-p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 20px 0;
+  }
+
+  .header-section-right h3 {
+    margin-right: 35px;
+  }
+
+  .header-section {
+    flex-direction: column;
+  }
+
+  .header-section-left {
+    width: auto;
+    margin: 90px auto 0;
+  }
+
+  .sneaker {
+    width: 88%;
+  }
+
+  .head-container {
+    width: 100%;
+  }
+
+  .section-services {
+    max-width: 100%;
+    padding: 90px 0 65px;
+  }
+
+  .section-services-container {
+    margin-left: 15px;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+    margin: 30px 15px;
+    padding: 0px 20px 0px 30px;
+  }
+
+  .section-promotion-container {
+    margin-left: 20px;
+  }
+
+  .section-promotion {
+    width: 100%;
+  }
+
+  .promotion-cards-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .promotion-card-left {
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+
+  .promotion-card-right {
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+
+  .promotion-card-left img {
+    width: 210px;
+    margin: 20px;
+  }
+
+  .promotion-card-right img {
+    width: 270px;
+    margin-top: 20px;
+  }
+
+  .promotion-card-right-bottom img {
+    width: 150px;
+  }
+
+  .promotion-card-right-bottom {
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+
+  .h4-card {
+    margin: 15px 0 15px 30px;
+  }
+
+  .h4-card h4 {
+    font-size: 16px;
+  }
+
+  .more-about-us {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .text-more-about-us {
+    margin-left: 20px;
+  }
+
+  .more-about-us h3 {
+    font-weight: 300;
+    margin: 5px 0;
+    line-height: 1.4;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .map {
+    width: 100%;
+    height: 250px;
+  }
+
+  .footer {
+    padding: 50px 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  footer .logo {
+    padding: 0 15px;
+    width: 100px;
+  }
+
+  .footer-icons {
+    width: 125px;
+    justify-content: space-between;
+    margin: 60px 15px 15px;
+  }
+
+  .footer-p {
+    padding: 0 15px;
+  }
+
+  .footer-p a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-p a:hover {
+    color: var(--orange);
+  }
 }
